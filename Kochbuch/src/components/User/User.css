@@ -1,0 +1,78 @@
+.Account{
+    width: 60%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.Account h1, .Account p {
+    text-align: left;
+    margin-left: 10rem;
+}
+
+.Account h3{
+    margin-bottom: 0.3rem;
+}
+
+.Account__Button {
+    background-color: goldenrod;
+    color: white;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 0.8rem;
+}
+
+
+.Account__Buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.Account__Button:hover {
+    background-color: gold;
+}
+
+.Account__Row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+.Account__Row input{
+    max-width: 250px;
+    
+}
+
+.Account__Row h3{
+    min-width: 100px;
+}
+
+@media (max-width: 768px) {
+    .Account{
+        width: 90vw;
+        box-shadow: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .Account__Buttons{
+        margin-right: 0;
+    }
+
+    .Account h1, .Account p{
+        margin-left: 0;
+    }
+
+    .Account p{
+        text-align: center;
+    }
+
+}

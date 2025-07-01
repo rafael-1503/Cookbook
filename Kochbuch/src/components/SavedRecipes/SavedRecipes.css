@@ -1,0 +1,29 @@
+.SavedRecipes{
+    width: 60%;
+    min-height: 100vh;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.SavedRecipes__Title{
+    text-align: center;
+}
+
+.SavedRecipes__Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .SavedRecipes{
+        width: 90vw;
+        box-shadow: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+}

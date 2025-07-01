@@ -1,0 +1,81 @@
+.AllRecipes{
+    width: 60%;
+    min-height: 100vh;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.AllRecipes__Title{
+    text-align: center;
+}
+
+.AllRecipes__Filters{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: end;
+    
+}
+
+.AllRecipes__Filter{
+    width: 30%;
+    
+}
+
+.AllRecipes__Filter select{
+    border-radius: 10px;
+}
+
+.AllRecipes__Search{
+    display: flex;
+    gap: 0.5rem;
+    width: 50%;
+    height: 41px;
+
+}
+
+.AllRecipes__Search button{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    background: none;
+}
+
+.AllRecipes__Grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+.AllRecipes__Filter label{
+        display: block;
+        margin-bottom: 0.4rem;
+    }
+
+@media (max-width: 768px) {
+    .AllRecipes{
+        width: 90vw;
+        box-shadow: none;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .AllRecipes__Filters{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+    }
+
+    .AllRecipes__Search{
+        width: 80vw;
+    }
+
+    .AllRecipes__Filter{
+        width: 40vw;
+        
+    }
+}

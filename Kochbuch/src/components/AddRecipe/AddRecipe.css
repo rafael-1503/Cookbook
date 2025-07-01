@@ -1,0 +1,162 @@
+.AddRecipe {
+    width: 60%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.AddRecipe__Title h1 {
+    text-align: center;
+}
+
+.AddRecipe__Inputs > div {
+    margin-bottom: 2em;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input,
+select,
+.AddRecipe__Inputs__Name input,
+.AddRecipe__Inputs__Image input,
+.AddRecipe__Inputs__Directions textarea,
+.AddRecipe__Inputs__Ingredients__Row input,
+.AddRecipe__Inputs__Ingredients__Row select {
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input,
+select,
+.AddRecipe__Inputs__Name input,
+.AddRecipe__Inputs__Image input,
+.AddRecipe__Inputs__Directions textarea{
+    width: 100%;
+    
+}
+.AddRecipe__Inputs__Tags__Row,
+.AddRecipe__Inputs__Ingredients__Row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.AddRecipe__Inputs__Ingredients__Row__Amount{
+    width: 20%;
+}
+
+.AddRecipe__Inputs__Ingredients__Row__Unit{
+    width: 20%;
+}
+
+.AddRecipe__Inputs__Ingredients__Row__Name{
+    width: 70%
+}
+
+.AddRecipe__Inputs__Tags__Row input{
+    width: 260px;
+}
+
+.AddRecipe__Button {
+    background-color: goldenrod;
+    color: white;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.AddRecipe__Button:hover{
+    background-color: gold;
+}
+
+.AddRecipe__Inputs__Categories{
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+}
+
+.AddRecipe__Inputs__Categories_SaveCategory{
+    margin-top: 46px;
+}
+
+.AddRecipe__Inputs__Categories_AddCategory,
+.AddRecipe__Inputs__Categories_SelectCategory{
+    width: 260px;
+    
+}
+
+h3{
+    margin-bottom: 0.3rem;
+}
+
+.AddRecipe__Inputs__NutritionalValues__Values{
+    display: flex;
+    gap: 0.3rem;
+}
+
+.AddRecipe__Inputs__Save{
+        display: flex;
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+@media (max-width: 768px) {
+
+    .AddRecipe{
+        width: 90vw;
+        box-shadow: none;
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 0;
+    }
+
+    .AddRecipe__Inputs__Ingredients__Row {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        margin-bottom: 1.5rem;
+    }
+
+    .AddRecipe__Inputs__Categories{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .AddRecipe__Inputs__Ingredients__Row:last-of-type{
+        margin-bottom: 0.5rem;
+    }
+
+    .AddRecipe__Inputs__Ingredients__Row__Amount,
+    .AddRecipe__Inputs__Ingredients__Row__Unit{
+        width: 40vw;
+    }
+
+    .AddRecipe__Inputs__Ingredients__Row__Name{
+        width: 55vw;
+    }
+
+    .AddRecipe__Inputs__Ingredients__Row button{
+        width: 25vw;
+    }
+
+    .AddRecipe__Inputs__Categories_SaveCategory{
+        margin-top: 0;
+    }
+
+    .AddRecipe__Inputs__Categories{
+        gap: 0.5rem;
+    }
+
+    .AddRecipe__Inputs__Categories h3{
+        margin-top: 0.5rem;
+    }
+}

@@ -1,0 +1,124 @@
+.Comments{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    width: 30vw;
+}
+
+.Comments__AverageRating{
+    display: flex;
+    align-items: center;
+}
+
+.Comments__AverageRating__Anzahl{
+    font-size: calc(12px + 1.5vw);
+    padding-left: 0.4rem;
+    margin: 0;
+    text-align: center;
+}
+
+
+.Comments__Rating button{
+    border: none;
+    background-color: white;
+    padding: 0.1rem;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.Comments__AddComment{
+    display: flex;
+    min-width: 200px;
+    gap: 1rem;
+}
+
+.Comments__AddComment button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 20px;
+    background: none;
+    width: 70px;
+    cursor: pointer;
+}
+
+.Comments__AddComment input{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.Comments__AddComment button:hover svg{
+    transform: scale(1.2);
+}
+
+.Comments__Comment{
+    min-width: 200px;
+    width: 30vw;
+}
+
+.Comments__User{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.Comments__Text{
+    margin-left: 3rem;
+    border-radius: 10px;
+    background-color: lightgray;
+    padding: 1rem;
+    
+}
+
+.HorizontalDivider__Comment {
+    border-bottom: 1px solid lightgray;
+    height: 1rem;
+    margin-bottom: 0;
+    margin-left: 3rem;
+}
+
+.Comments__Comment:last-of-type .HorizontalDivider__Comment {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .Comments,
+    .Comments__Comment {
+        width: 90vw;
+        min-width: unset;
+    }
+
+    .Comments__AddComment {
+        flex-direction: row;
+        width: 100%;
+        gap: 0.5rem;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .Comments__AddComment input {
+        flex: 1;
+        padding: 0.5rem;
+    }
+
+    .Comments__AddComment button {
+        width: auto;
+        white-space: nowrap;
+        padding: 0.5rem 1rem;
+    }
+
+    .Comments__User {
+        font-size: 16px;
+        gap: 0.5rem;
+    }
+
+    .Comments__Text {
+        margin-left: 0;
+    }
+
+    .HorizontalDivider__Comment {
+        margin-left: 0;
+    }
+}
